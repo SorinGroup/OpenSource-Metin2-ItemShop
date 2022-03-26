@@ -2,10 +2,14 @@
 include('config.php');
 
 class AleXso {
+	public function settings($set) {
+		global $conn;
+		$alexso_settings = $conn->prepare("SELECT * FROM alexso.alexso_ishop_settings");
+		$alexso_settings->execute();
+		$settings = $alexso_settings->fetchAll();
 	
-	
-	
-	
+		return $settings[0][$set];
+	}
 	
 }
 
