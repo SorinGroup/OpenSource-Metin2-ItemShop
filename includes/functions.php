@@ -1,4 +1,13 @@
 <?php
+include('config.php');
+
+class AleXso {
+	
+	
+	
+	
+	
+}
 
 	if(isset($_POST['login'])) {
 		
