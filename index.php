@@ -1,4 +1,5 @@
 <?php
+session_start();
 include('includes/functions.php');
 if(isset($_SESSION['login'])) {
 	
